@@ -18,6 +18,7 @@ const ratiosTypeDefs = gql`
 
   type Query {
     ratios(city: String!): [Ratios]
+    hello: String
   }
 
   type Mutation {

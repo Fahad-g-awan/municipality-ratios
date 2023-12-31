@@ -111,6 +111,7 @@ const importExcelData = async (filePath, logoUrl) => {
 
 const ratiosResolver = {
   Query: {
+    ratios: async (parent, { city }, context) => "Howdy!!",
     ratios: async (parent, { city }, context) => {
       console.log("city", city);
       try {
