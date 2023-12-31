@@ -43,6 +43,10 @@ db.on("open", async () => {
     })
   );
 
+  app.get("/", (req, res) => {
+    res.send("hello");
+  });
+
   await new Promise((resolve) => httpServer.listen({ port: 5000 }, resolve));
   console.log("Server ready at http://localhost:5000/graphql");
 });
